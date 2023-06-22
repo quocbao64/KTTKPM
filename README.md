@@ -6,8 +6,8 @@
   ```
 Truy cập [http://localhost:15672](http://localhost:15672/)
 
-## Config demo rabbitmq trên IntelliJ
-### Mở thư mục demo_rabbitmq trên IntelliJ
+## Config chatapp trên IntelliJ
+### Mở thư mục chatapp trên IntelliJ
 - Nhấn vào dropdown trên thanh công cụ IntelliJ và chọn **Edit Configurations...**
   <img src="/images/configuration/image2.png" alt=""/>
 
