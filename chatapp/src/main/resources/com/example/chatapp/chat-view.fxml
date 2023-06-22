@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapp.Controller.Controller">
+    <children>
+        <ScrollPane fx:id="spMessages" layoutX="200.0" layoutY="14.0" prefHeight="340.0" prefWidth="600.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <content>
+                <AnchorPane prefHeight="340.0" prefWidth="600.0" />
+            </content>
+        </ScrollPane>
+        <TextField fx:id="tfMessage" layoutX="200.0" layoutY="361.0" prefHeight="26.0" prefWidth="500.0" promptText="Enter message here" />
+        <Button fx:id="btnSend" layoutX="700.0" layoutY="362.0" mnemonicParsing="false" onAction="#onSendButtonClick" text="Send" AnchorPane.leftAnchor="710.0" AnchorPane.rightAnchor="10.0" />
+        <ScrollPane fx:id="current_user" layoutY="10.0" prefHeight="340.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="610.0" AnchorPane.topAnchor="50.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="177.0" />
+            </content>
+        </ScrollPane>
+        <Label alignment="CENTER" centerShape="true" layoutX="10.0" layoutY="20.0" prefHeight="18.0" prefWidth="180.0" text="Current Users" textAlignment="CENTER" AnchorPane.bottomAnchor="372.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="610.0" AnchorPane.topAnchor="10.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Label>
+      <Button fx:id="btnConnect" layoutX="10.0" layoutY="362.0" mnemonicParsing="false" onAction="#onBtnConnectClick" text="Connect" />
+      <Button fx:id="btnDisconnect" layoutX="114.0" layoutY="362.0" mnemonicParsing="false" onAction="#onBtnDisconnectClick" text="Disconnect" />
+    </children>
+</AnchorPane>
