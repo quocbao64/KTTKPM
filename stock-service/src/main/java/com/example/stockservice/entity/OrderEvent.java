@@ -2,13 +2,15 @@ package com.example.stockservice.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "order_event")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class OrderEvent {
+public class OrderEvent implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
